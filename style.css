@@ -39,7 +39,7 @@ section.topo {
 }
 .text-logo{
     text-align: center;
-    color: #f8f7f7;
+    color: #ff9100;
     font-size: 30px;
     padding-top: 12px;
     padding-bottom: 5px;
@@ -86,9 +86,6 @@ section.topo {
     
 }
 
-.image-container {
-    margin-right: 20px;
-}
 
 .rounded-image {
     border-radius: 150%;
@@ -110,8 +107,8 @@ section.topo {
 }
 
 .social-media-icons {
-    display: flex;
-    justify-content: left;
+    display: inline-flex;
+    
     margin-top: -20px;
 }
 .social-media-icons {
@@ -127,6 +124,9 @@ section.topo {
         50% { opacity: 0; }
         100% { opacity: 1; }
     }
+.redes{
+    text-align: left;
+}
 
 .slider-container img {
     width: 75px;
@@ -221,7 +221,8 @@ section.diferenciais{
     font-size: 15.5px;
     color: #c2c2c2;
     margin-top: 10px;
-    padding-right: 45px;
+    margin-right: 18px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,23 +231,115 @@ section.diferenciais{
         width: 100% !important;
         text-align: center !important;
     }
-    .box-single-diferenciais {
-        width: 100%;
+    .footer{
+        font-size: 12px;
+        margin-bottom: -30px;
     }
+
     .w50 {
         width: 100%;
+    }
+    .video-trailer{
+        width: 130px;
     }
     .logo {
         float: left;
         width: 130px;
+    }
+
+    section.topo{
+        background-position: 0 ; /* Posiciona a imagem no centro da parte inferior */
+        background-repeat: no-repeat;
+        background-attachment: local;
+        max-width: 100%;
+        padding-top: 20px; /* Aumenta o espaçamento superior para mover a imagem para cima */
+        padding-bottom: 0px;
+        background-color: #000000; /* Adiciona uma cor de fundo para preencher o espaço acima da imagem */
+    
+        /* Adicione as seguintes propriedades para centralizar verticalmente o conteúdo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dinos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    
+    .dinos .menu-desktop {
+        margin-right: 60px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    .dinos {
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: walk 15s linear infinite;
     }
     .img-time {
         margin-top: 30px;
         text-align: center;
         margin-bottom: 20px;
     }
-    .menu-desktop {
-        display: none;
+    .content{
+        padding: 0 12px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .slider-container{
+        text-align: center;
+    }
+
+    .image-container{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text-logo h2{
+        font-size: 30px;
+    }
+    .images img{
+        width: 36px;
+        height: 36px;
+    }
+    .rounded-image{
+        text-align: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-container{
+        text-align: center;
+    }
+
+    .text-container p{
+        font-size: 13.8px;
+        text-align: justify;
+        
+    }
+    .box-single-diferenciais p{
+        margin-right: 0;
+    }
+
+    .redes{
+        text-align: center;
+        margin-top: 17px;
+        margin-bottom: -39px;
+    }
+    .social-media-icons img{
+        width: 30px;
+        height: 30px;
+    }
+    .titulo-codigo{
+        font-size: 16px;
+    }
+    .codigos video{
+        width: 357px;
+        height: 300px;
     }
     .menu-mobile {
         display: block;
